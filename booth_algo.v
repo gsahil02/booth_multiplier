@@ -9,7 +9,8 @@ output reg [multiplier_width-1 : 0] QR;
 input [multiplicand_width-1 : 0] multiplicand;
 input [multiplier_width-1 : 0] multiplier;
 reg [multiplicand_width-1 : 0] BR;  //temporary register to store the multiplicand
-reg qnext;    
+reg qnext;   
+    
 //{QR[0],qnext} decide whether the divisor would be added or subtracted from the partial product as per the booth's algorithm as shown:
 //{01} AC=AC+BR
 //{10} AC=AC-BR
